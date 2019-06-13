@@ -9,10 +9,10 @@ Prototype Refactor
 */
 
 class GameObject {
-    constructor(createdAt, name) {
-        this.createdAt = createdAt;
-        this.name = name;
-        this.dimensions = name; 
+    constructor(atts) {
+        this.createdAt = atts.createdAt;
+        this.name = atts.CharacterStatsname;
+        this.dimensions = atts.name; 
     }
 }
 
@@ -38,6 +38,8 @@ class GameObject {
   CharacterStats.prototype.takeDamage = function () {
     return `${this.name} took damage.`;
   }
+
+
   
 
   function Humanoid(atts) {
