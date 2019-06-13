@@ -35,6 +35,21 @@ class Person {
         }
 
     }
+
+    class Students extends Person {
+        constructor(attr) {
+            this.previousBackground = attr.previousBackground;
+            this.className = attr.className;
+            this.favSubjects = attr.favSubjects;
+        }
+
+        listsSubject() {
+            console.log(Students.favSubjects);
+        }
+        PRAssignment(subject) {
+            console.log(`${Students.name} has begun sprint challenge on ${subject}`)
+        }
+    }
     
 
 
